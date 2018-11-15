@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/moudel/moudel.iml" filepath="$PROJECT_DIR$/moudel/moudel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webprokect/webprokect.iml" filepath="$PROJECT_DIR$/webprokect/webprokect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workplaceidea.iml" filepath="$PROJECT_DIR$/workplaceidea.iml" />
+    </modules>
+  </component>
+</project>

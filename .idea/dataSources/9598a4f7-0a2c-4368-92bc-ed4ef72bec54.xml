@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="note"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="smallmarket"/>
+    <schema id="8" parent="1" name="tedu_store"/>
+    <schema id="9" parent="1" name="test"/>
+    <table id="10" parent="2" name="account"/>
+    <table id="11" parent="2" name="card_system"/>
+    <table id="12" parent="2" name="cust"/>
+    <table id="13" parent="2" name="department"/>
+    <table id="14" parent="2" name="dept"/>
+    <table id="15" parent="2" name="emp"/>
+    <table id="16" parent="2" name="t_emp"/>
+    <table id="17" parent="2" name="t_item"/>
+    <table id="18" parent="2" name="t_item_category"/>
+    <table id="19" parent="2" name="tb_advice"/>
+    <table id="20" parent="2" name="tb_file"/>
+    <table id="21" parent="2" name="tb_lable"/>
+    <table id="22" parent="2" name="tb_meet"/>
+    <table id="23" parent="2" name="tb_menu"/>
+    <table id="24" parent="2" name="tb_pcard"/>
+    <table id="25" parent="2" name="tb_text"/>
+    <table id="26" parent="2" name="tb_user"/>
+    <table id="27" parent="2" name="trade"/>
+    <column id="28" parent="10" name="ACCTNO">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="10" name="CUSTNO">
+      <Position>2</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="30" parent="10" name="AMT">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="31" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCTNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="11" name="stype">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="34" parent="11" name="appCompany">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="11" name="dept">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="36" parent="11" name="username">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="11" name="date">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="11" name="time">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="39" parent="11" name="reason">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="40" parent="11" name="state">
+      <Position>9</Position>
+      <DataType>varchar(25)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="41" parent="11" name="create_user">
+      <Position>10</Position>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="11" name="create_time">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="43" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="12" name="CUSTNO">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="12" name="CUSTNAME">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="46" parent="12" name="CUSTID">
+      <Position>3</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="47" parent="12" name="CUSTTYPE">
+      <Position>4</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="48" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CUSTNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="13" name="DEPTNO">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="13" name="DNAME">
+      <Position>2</Position>
+      <DataType>varchar(14)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="13" name="LOC">
+      <Position>3</Position>
+      <DataType>varchar(13)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="13" name="descript">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <DefaultExpression>&apos;&apos;&apos;newcolumn&apos;&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="53" parent="14" name="DEPTNO">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="14" name="DNAME">
+      <Position>2</Position>
+      <DataType>varchar(14)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="14" name="LOC">
+      <Position>3</Position>
+      <DataType>varchar(13)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <index id="56" parent="14" name="DNAME">
+      <ColNames>DNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="57" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>DEPTNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="58" parent="14" name="DNAME">
+      <ColNames>DNAME</ColNames>
+      <UnderlyingIndexName>DNAME</UnderlyingIndexName>
+    </key>
+    <column id="59" parent="15" name="EMPNO">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="15" name="ENAME">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="15" name="JOB">
+      <Position>3</Position>
+      <DataType>varchar(9)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="62" parent="15" name="MGR">
+      <Position>4</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="63" parent="15" name="HIREdate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="64" parent="15" name="SAL">
+      <Position>6</Position>
+      <DataType>double(7,2)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="65" parent="15" name="COMM">
+      <Position>7</Position>
+      <DataType>double(7,2)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="66" parent="15" name="DEPTNO">
+      <Position>8</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="67" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMPNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="69" parent="16" name="name">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="70" parent="16" name="sal">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="71" parent="17" name="id">
+      <Position>1</Position>
+      <Comment>商品id</Comment>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="17" name="category_id">
+      <Position>2</Position>
+      <Comment>分类id</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="73" parent="17" name="item_type">
+      <Position>3</Position>
+      <Comment>商品系列</Comment>
+      <DataType>varchar(100)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="74" parent="17" name="title">
+      <Position>4</Position>
+      <Comment>商品标题</Comment>
+      <DataType>varchar(100)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="75" parent="17" name="sell_point">
+      <Position>5</Position>
+      <Comment>商品卖点</Comment>
+      <DataType>varchar(150)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="76" parent="17" name="price">
+      <Position>6</Position>
+      <Comment>商品单价</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="77" parent="17" name="num">
+      <Position>7</Position>
+      <Comment>库存数量</Comment>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="78" parent="17" name="barcode">
+      <Position>8</Position>
+      <Comment>条形码</Comment>
+      <DataType>varchar(30)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="79" parent="17" name="image">
+      <Position>9</Position>
+      <Comment>图片路径</Comment>
+      <DataType>varchar(500)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="80" parent="17" name="status">
+      <Position>10</Position>
+      <Comment>商品状态  1：上架   2：下架   3：删除</Comment>
+      <DataType>int(1)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="81" parent="17" name="priority">
+      <Position>11</Position>
+      <Comment>显示优先级</Comment>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="82" parent="17" name="created_time">
+      <Position>12</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="83" parent="17" name="modified_time">
+      <Position>13</Position>
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="84" parent="17" name="created_user">
+      <Position>14</Position>
+      <Comment>创建人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="85" parent="17" name="modified_user">
+      <Position>15</Position>
+      <Comment>最后修改人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="86" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="87" parent="18" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="88" parent="18" name="parent_id">
+      <Position>2</Position>
+      <Comment>父分类id</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="89" parent="18" name="name">
+      <Position>3</Position>
+      <Comment>名称</Comment>
+      <DataType>varchar(150)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="90" parent="18" name="status">
+      <Position>4</Position>
+      <Comment>状态   1：正常   2：删除</Comment>
+      <DataType>int(1)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="91" parent="18" name="sort_order">
+      <Position>5</Position>
+      <Comment>排序号</Comment>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="92" parent="18" name="is_parent">
+      <Position>6</Position>
+      <Comment>是否是父分类   1：是  0：否</Comment>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="93" parent="18" name="created_time">
+      <Position>7</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="94" parent="18" name="modified_time">
+      <Position>8</Position>
+      <Comment>最后修改时间</Comment>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="95" parent="18" name="created_user">
+      <Position>9</Position>
+      <Comment>创建人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="96" parent="18" name="modified_user">
+      <Position>10</Position>
+      <Comment>最后修改人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="97" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="98" parent="19" name="Advice_id">
+      <Position>1</Position>
+      <Comment>自增字段（主键）</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="99" parent="19" name="Advice _content">
+      <Position>2</Position>
+      <Comment>建议内容</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="100" parent="19" name="Advice _subject">
+      <Position>3</Position>
+      <Comment>建议主题</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="101" parent="19" name="Advice _sender">
+      <Position>4</Position>
+      <Comment>建议人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="102" parent="19" name="Advice _time">
+      <Position>5</Position>
+      <Comment>建议时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="103" parent="19" name="Advice_sendbranch">
+      <Position>6</Position>
+      <Comment>建议部门</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="104" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Advice_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="105" parent="20" name="File_id">
+      <Position>1</Position>
+      <Comment>自增字段（主键）</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="106" parent="20" name="File_name">
+      <Position>2</Position>
+      <Comment>文件名字</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;&apos;&apos;&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="107" parent="20" name="File_uper">
+      <Position>3</Position>
+      <Comment>文件上传作者</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="20" name="File_size">
+      <Position>4</Position>
+      <Comment>文件大小</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="20" name="File_uptime">
+      <Position>5</Position>
+      <Comment>文件上传时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="20" name="File_info">
+      <Position>6</Position>
+      <Comment>文件描述信息</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="111" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>File_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="112" parent="21" name="Label_id">
+      <Position>1</Position>
+      <Comment>自增字段（主键）</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="113" parent="21" name="Label_name">
+      <Position>2</Position>
+      <Comment>下拉列表名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="21" name="Label_value">
+      <Position>3</Position>
+      <Comment>下拉列表项值</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="21" name="Label_type">
+      <Position>4</Position>
+      <Comment>下拉列表类型</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="21" name="Label_order">
+      <Position>5</Position>
+      <Comment>下拉列表项排列</Comment>
+      <DataType>smallint(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="117" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Label_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="118" parent="22" name="Meet_id">
+      <Position>1</Position>
+      <Comment>自增字段（主键）</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="119" parent="22" name="Meet _content">
+      <Position>2</Position>
+      <Comment>会议内容</Comment>
+      <DataType>text|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="120" parent="22" name="Meet _subject">
+      <Position>3</Position>
+      <Comment>会议主题</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="121" parent="22" name="Meet_speaker">
+      <Position>4</Position>
+      <Comment>会议主持人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="122" parent="22" name="Meet _listener">
+      <Position>5</Position>
+      <Comment>会议出席者</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="123" parent="22" name="Meet _time">
+      <Position>6</Position>
+      <Comment>会议时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="124" parent="22" name="Meet_address">
+      <Position>7</Position>
+      <Comment>会议地点</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="125" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Meet_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="126" parent="23" name="Menu_id">
+      <Position>1</Position>
+      <Comment>程序中名称（主键）</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="23" name="Menu_name">
+      <Position>2</Position>
+      <Comment>显示菜单名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="128" parent="23" name="Menu_paretid">
+      <Position>3</Position>
+      <Comment>父菜单值</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="23" name="Menu_action">
+      <Position>4</Position>
+      <Comment>菜单触发请求操作</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="23" name="Menu_jibie">
+      <Position>5</Position>
+      <Comment>菜单级别</Comment>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="23" name="Menu_order">
+      <Position>6</Position>
+      <Comment>菜单页面排序</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="23" name="user_able">
+      <Position>7</Position>
+      <Comment>菜单权限级别</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="133" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Menu_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="134" parent="24" name="Pcard_id">
+      <Position>1</Position>
+      <Comment>自增字段（主键）</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="135" parent="24" name="Pcard_content">
+      <Position>2</Position>
+      <Comment>公告内容</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="136" parent="24" name="Pcard_subject">
+      <Position>3</Position>
+      <Comment>公告主题</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="137" parent="24" name="Pcard_author">
+      <Position>4</Position>
+      <Comment>公告发布人</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="138" parent="24" name="Pcard_time">
+      <Position>5</Position>
+      <Comment>公告发布时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="139" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Pcard_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="140" parent="25" name="Text_id">
+      <Position>1</Position>
+      <Comment>自增字段(主键)</Comment>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="141" parent="25" name="Text _subject">
+      <Position>2</Position>
+      <Comment>发文主题</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="142" parent="25" name="Text _geter">
+      <Position>3</Position>
+      <Comment>发文接收者</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="143" parent="25" name="Text _sender">
+      <Position>4</Position>
+      <Comment>发文发送者</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="144" parent="25" name="Text _content">
+      <Position>5</Position>
+      <Comment>发文内容</Comment>
+      <DataType>varchar(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="145" parent="25" name="Text _sendtime">
+      <Position>6</Position>
+      <Comment>发文发送时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="25" name="Text _mark">
+      <Position>7</Position>
+      <Comment>发文标记</Comment>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="25" name="Del_getter">
+      <Position>8</Position>
+      <Comment>0表示没有删除，1表示删除</Comment>
+      <DataType>varchar(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="25" name="Del_sender">
+      <Position>9</Position>
+      <Comment>0表示没有删除，1表示删除</Comment>
+      <DataType>varchar(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="149" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Text_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="150" parent="26" name="User_name">
+      <Position>1</Position>
+      <Comment>用户名(主键)</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="151" parent="26" name="User_password">
+      <Position>2</Position>
+      <Comment>用户密码</Comment>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="152" parent="26" name="True_name">
+      <Position>3</Position>
+      <Comment>真实姓名</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="26" name="User_able">
+      <Position>4</Position>
+      <Comment>用户权限</Comment>
+      <DataType>smallint(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="26" name="User_good">
+      <Position>5</Position>
+      <Comment>是否为优秀员工</Comment>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="155" parent="26" name="User_branch">
+      <Position>6</Position>
+      <Comment>用户所在的部门</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="156" parent="26" name="User_job">
+      <Position>7</Position>
+      <Comment>用户职位</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="157" parent="26" name="User_sex">
+      <Position>8</Position>
+      <Comment>用户性别</Comment>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="158" parent="26" name="User_email">
+      <Position>9</Position>
+      <Comment>用户的mail地址</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="159" parent="26" name="User_tel">
+      <Position>10</Position>
+      <Comment>用户电话</Comment>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="26" name="User_address">
+      <Position>11</Position>
+      <Comment>用户的地址</Comment>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="26" name="User_accessTimes">
+      <Position>12</Position>
+      <Comment>用户访问次数</Comment>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="162" parent="26" name="User_foundTime">
+      <Position>13</Position>
+      <Comment>用户创建时间</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="163" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>User_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="164" parent="27" name="TRADEID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="165" parent="27" name="ACCTNO">
+      <Position>2</Position>
+      <DataType>int(4)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="166" parent="27" name="AMT">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="167" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>TRADEID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
